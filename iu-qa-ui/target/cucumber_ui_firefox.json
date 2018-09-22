@@ -1,0 +1,269 @@
+[
+  {
+    "id": "clp-ui-launch-page-access-for-web-applications",
+    "description": "",
+    "name": "CLP_UI Launch page access for web applications",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "clp-ui-launch-page-access-for-web-applications;check-iu-log-in-access-for-valid-users",
+        "tags": [
+          {
+            "name": "@iu_CLPAccess",
+            "line": 3
+          }
+        ],
+        "description": "",
+        "name": "Check iu log-in access for valid users",
+        "keyword": "Scenario",
+        "line": 4,
+        "steps": [
+          {
+            "result": {
+              "duration": 15227507343,
+              "status": "passed"
+            },
+            "name": "I access the common launch page Web Client",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "ManageUserAccess.i_access_the_common_launch_page_Web_Client()"
+            }
+          },
+          {
+            "result": {
+              "duration": 17225492456,
+              "status": "passed"
+            },
+            "name": "I fill in login name \"QA_clp102\" and password \"osi\"",
+            "keyword": "When ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "QA_clp102",
+                  "offset": 22
+                },
+                {
+                  "val": "osi",
+                  "offset": 47
+                }
+              ],
+              "location": "ManageAuthentication.i_fill_in_login_name_and_password(String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 15069165830,
+              "status": "passed"
+            },
+            "name": "I check \u003clinks\u003e for \u003capplications\u003e on Common Launch Page",
+            "keyword": "And ",
+            "line": 7,
+            "match": {
+              "location": "ManageAccessLinks.i_check_Links_for_Applications_on_Common_Launch_Page(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "applications",
+                  "links"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Web Designer",
+                  "Web Designer"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "PrOptimaWeb Client",
+                  "Web Client"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Portal",
+                  "Portal"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Alert Manager",
+                  "Alert Manager"
+                ],
+                "line": 12
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 78418231676,
+              "status": "passed"
+            },
+            "name": "I logout from the User Web Client",
+            "keyword": "And ",
+            "line": 13,
+            "match": {
+              "location": "ManageUserAccess.i_logout_from_the_User_Web_Client()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "com/mycom/test/features_ui/AccessLinks.feature"
+  },
+  {
+    "id": "iu-login-functionality",
+    "description": "",
+    "name": "iu Login Functionality",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "iu-login-functionality;check-iu-log-in-access-for-invalid-users",
+        "tags": [
+          {
+            "name": "@iu_Authentication1",
+            "line": 3
+          }
+        ],
+        "description": "",
+        "name": "Check iu log-in access for invalid users",
+        "keyword": "Scenario",
+        "line": 4,
+        "steps": [
+          {
+            "result": {
+              "duration": 10524507544,
+              "status": "passed"
+            },
+            "name": "I access the common launch page Web Client",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "ManageUserAccess.i_access_the_common_launch_page_Web_Client()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4769056758,
+              "status": "passed"
+            },
+            "name": "I fill in login name \"invalid\" and password \"invalid\"",
+            "keyword": "When ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 22
+                },
+                {
+                  "val": "invalid",
+                  "offset": 45
+                }
+              ],
+              "location": "ManageAuthentication.i_fill_in_login_name_and_password(String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 250589677,
+              "status": "passed"
+            },
+            "name": "An error message is visible in the login page",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "ManageAuthentication.an_error_message_is_visible_in_the_login_page()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "iu-login-functionality;check-iu-log-in-access-for-valid-users",
+        "tags": [
+          {
+            "name": "@iu_Authentication2",
+            "line": 9
+          }
+        ],
+        "description": "",
+        "name": "Check iu log-in access for valid users",
+        "keyword": "Scenario",
+        "line": 10,
+        "steps": [
+          {
+            "result": {
+              "duration": 878019765,
+              "status": "passed"
+            },
+            "name": "I access the common launch page Web Client",
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "ManageUserAccess.i_access_the_common_launch_page_Web_Client()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4150517554,
+              "status": "passed"
+            },
+            "name": "I fill in login name \"QA_clp101\" and password \"QA_clp101\"",
+            "keyword": "When ",
+            "line": 12,
+            "match": {
+              "arguments": [
+                {
+                  "val": "QA_clp101",
+                  "offset": 22
+                },
+                {
+                  "val": "QA_clp101",
+                  "offset": 47
+                }
+              ],
+              "location": "ManageAuthentication.i_fill_in_login_name_and_password(String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1333054045,
+              "status": "passed"
+            },
+            "name": "The user name is visible in the main page header",
+            "keyword": "Then ",
+            "line": 13,
+            "match": {
+              "location": "ManageAuthentication.the_user_name_is_visible_in_the_main_page_header()"
+            }
+          },
+          {
+            "result": {
+              "duration": 61994934557,
+              "status": "passed"
+            },
+            "name": "I logout from the User Web Client",
+            "keyword": "And ",
+            "line": 14,
+            "match": {
+              "location": "ManageUserAccess.i_logout_from_the_User_Web_Client()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "com/mycom/test/features_ui/Authentication.feature"
+  }
+]
